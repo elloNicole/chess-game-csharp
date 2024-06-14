@@ -20,12 +20,18 @@ namespace xadrez_console
 
                     Console.Write("Origem: ");
                     Posicao origem = Tela.lerPosicaoXadrez().toPosicao();
+
+                    bool[,] posicoesPossiveis = partida.tab.peca(origem).movimentosPossiveis(); //System.NullReferenceException: 'Object reference not set to an instance of an object.' tabuleiro.Tabuleiro.peca(...) retornou null.
+
+                    Console.Clear();
+                    Tela.imprimirTabuleiro(partida.tab, posicoesPossiveis);
+
                     Console.Write("Destino: ");
                     Posicao destino = Tela.lerPosicaoXadrez().toPosicao();
 
                     partida.executaMovimento(origem, destino);
                 }
-                Tela.imprimirTabuleiro(partida.tab);
+                
 
             }catch(TabuleiroException e)
             {
@@ -33,8 +39,5 @@ namespace xadrez_console
             }
            
         }
-
-
-       
     }
 }
