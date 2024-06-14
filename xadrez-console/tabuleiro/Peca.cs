@@ -18,7 +18,12 @@
         public void incrementarQtdMovimentos()
         {
             qteMovimentos++;
-        } //qual classe?
+        } 
+
+        public void decrementarQtdMovimentos()
+        {
+            qteMovimentos--;
+        } 
 
 
         public bool existeMovimentosPossiveis()
