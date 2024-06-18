@@ -1,0 +1,1 @@
+Criação de jogo de xadrez com entrada e saída no terminal de console, usando boas práticas de orientação a objetos. Esse jogo de xadrez contém jogadas especiais como: roque pequeno e grande, en passant e promoção.
